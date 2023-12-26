@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <main>
+
+        <section class="intro">
+            <h1 class="title">To login the My site</h1>
+            <p>You have to fillup the firstname,lastname and email address in the form which followed up you to the site</p>
+        </section>
+
+        <section class="login">
+            <p class="para">Fill the given details correctly</p>
+            <form class="form">
+                <div class="inputf">
+                    <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+                    <span>!</span>
+                    <p class="warning">cannot empty</p>
+                </div> 
+
+                <div class="inputf">
+                    <input type="last-name" name="last-name" id="last-name" placeholder="Last name" required>
+                    <span>!</span>
+                    <p class="warning">cannnot empty</p>
+
+                </div>
+
+                <div class="inputf">
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                    <span>!</span>
+                    <p class="warning">cannot empty</p>
+                </div>
+
+                <input class="submitbtn" type="submit" value="SUMBIT" onclick="valid()"/>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
